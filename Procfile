@@ -1,1 +1,1 @@
-web: gunicorn zeus.wsgi --log-file -
+web: gunicorn vega.wsgi --log-file -
