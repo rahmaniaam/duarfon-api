@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+"autopep8" = "*"
+pylint = "*"
+
+[packages]
+django = "*"
+factory-boy = "*"
+faker = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
+django-autoslug = "*"
+djangorestframework-camel-case = "*"
+django-storages = "*"
+gunicorn = "*"
+coverage = "*"
+dj-database-url = "*"
+pyjwt = "*"
+"urllib3" = "*"
+whitenoise = "*"
+wrapt = "*"
+requests = "*"
+"boto3" = "*"
+botocore = "*"
+uritemplate = "*"
+django-extensions = "*"
+
+[requires]
+python_version = "3.6"
