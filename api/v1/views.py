@@ -1,7 +1,9 @@
 from rest_framework.generics import RetrieveAPIView
 from rest_framework.response import Response
+from ml.Final import run
 
 class PredictView(RetrieveAPIView):
 
   def get(self, request):
-    return Response(data={"wow": 3})
+    result = run()
+    return Response(data=result)
