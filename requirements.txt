@@ -1,0 +1,30 @@
+django
+factory-boy
+faker
+django-cors-headers
+djangorestframework
+django-autoslug
+djangorestframework-camel-case
+django-storages
+gunicorn
+coverage
+dj-database-url
+pyjwt
+urllib3
+whitenoise
+wrapt
+requests
+boto3
+botocore
+uritemplate
+django-extensions
+numpy == 1.9.3
+pytz == 2011k
+pandas == 0.15.2
+python-dateutil == 2.5.0
+cycler == 0.10
+pyparsing == 2.3.0
+kiwisolver == 1.0.1
+six == 1.5
+setuptools == 40.6.2
+scipy == 0.14.0

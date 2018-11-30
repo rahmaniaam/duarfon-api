@@ -133,7 +133,7 @@ SILENCED_SYSTEM_CHECKS = ['rest_framework.W001']
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', DEPLOYMENT_ROOT_URI]
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ('localhost:5000', '127.0.0.1:5000')
+CORS_ORIGIN_WHITELIST = ('localhost:5000', '127.0.0.1:5000', 'https://duarfon.herokuapp.com', 'http://duarfon.herokuapp.com')
 
 
 # Password validation

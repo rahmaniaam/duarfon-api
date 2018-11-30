@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 from random import seed
 from random import randrange
@@ -12,22 +10,22 @@ def custom_one_hot_encoder(df, test_df, target, cat=[]):
         target_0 = set(df[df[target] == 0][col].unique())
         target_1 = set(df[df[target] == 1][col].unique())
         targeted = target_1
-        
+
         if len(target_0) < len(target_1):
             targeted = target_0
-            
+
         for t in targeted:
             df[col + '_{}'.format(t)] = 0
             test_df[col + '_{}'.format(t)] = 0
-    
+
         for i, row in df.iterrows():
             if row[col] in targeted:
                 df.set_value(i,col + '_{}'.format(row[col]),1)
-                
+
         for i, row in test_df.iterrows():
             if row[col] in targeted:
                 test_df.set_value(i,col + '_{}'.format(row[col]),1)
-    
+
     return df, test_df
 
 def fillNaN(dataset):
