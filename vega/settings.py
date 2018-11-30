@@ -34,7 +34,7 @@ DEPLOYMENT_ROOT_URL = 'https://' + DEPLOYMENT_ROOT_URI
 
 # Application definition
 APPS = [
-
+    'api'
 ]
 
 MODULES = [
