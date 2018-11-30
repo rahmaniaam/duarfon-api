@@ -29,7 +29,7 @@ PRODUCTION = os.environ.get('DJANGO_ENV') == 'production'
 TESTING = 'test' in sys.argv
 DEBUG = not PRODUCTION
 
-DEPLOYMENT_ROOT_URI = 'nda-vega.herokuapp.com'
+DEPLOYMENT_ROOT_URI = 'duarfon-api.herokuapp.com'
 DEPLOYMENT_ROOT_URL = 'https://' + DEPLOYMENT_ROOT_URI
 
 # Application definition
@@ -133,7 +133,7 @@ SILENCED_SYSTEM_CHECKS = ['rest_framework.W001']
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', DEPLOYMENT_ROOT_URI]
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ('localhost:3000', '127.0.0.1:3000')
+CORS_ORIGIN_WHITELIST = ('localhost:5000', '127.0.0.1:5000')
 
 
 # Password validation
